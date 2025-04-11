@@ -1,0 +1,222 @@
+/* Media Queries for Phones and Tablets */
+
+/* @media only screen and (max-width: 768px) - @media only screen and (max-width: 1024px) */
+
+@media only screen and (max-width: 1024px) 
+{
+
+    html,
+    body {
+        font-size: 18px;
+    }
+
+    /* Header adjustments */
+    #header {
+        padding: 5px 0;
+    }
+
+    .header-container {
+
+        /* align-items: center; */
+        padding: 0 5px;
+    }
+
+    .logo-section {
+        width: 10vw;
+        height: 50px;
+        margin-left: 0vw;
+        display: flex;
+        align-items: left;
+
+        gap: 5px;
+    }
+
+    .logo {
+        /* width: 100px; */
+        /* margin-right: 5px; */
+        /* height: auto; */
+
+    }
+
+    .nav-bar .nav-items {
+        flex-direction: column;
+        gap: 5px;
+        align-items: left;
+        margin-top: 50px;
+        margin-left: 20px;
+    }
+
+    .nav-bar .nav-items a {
+        font-size: 0.9rem;
+    }
+
+    .cta-button {
+
+        margin-right: 0vw;
+        width: 15vw;
+        height: 50px;
+
+        padding: 8px 16px;
+        font-size: 0.9rem;
+
+    }
+
+    /* >>>>>>>>>>>>>>>>>>>>>>>>  Dropdown-toggle */
+    /* Dropdown menu hidden by default */
+    .nav-bar {
+        position: absolute;
+        top: 0px;
+        left: -100%;
+        width: 35%;
+        height: 100vh;
+        background-color: #ffffff;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 10px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        z-index: 1000;
+        transition: left 0.4s ease;
+        /* Smooth slide-in effect */
+
+
+
+    }
+
+    /* Show the menu when active */
+    .nav-bar.active {
+        /* Slide into view */
+        left: 0px;
+    }
+
+
+    /* Dropdown toggle button */
+    .dropdown-toggle {
+        margin-right: 5vw;
+        height: 25px;
+        line-height: 50px;
+        width: 40px;
+        text-align: right;
+        background-color: #73c5ff;
+
+        position: relative;
+        color: #000;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background: none;
+        border: none;
+        cursor: pointer;
+        z-index: 1100;
+    }
+
+    .dropdown-toggle span {
+        background-color: #000;
+        position: absolute;
+        width: 100%;
+        height: .154em;
+        /* Adjust thickness of the bars */
+        transition: all 0.3s ease;
+    }
+
+    /* Adjust positions for the three bars */
+    .dropdown-toggle span:nth-child(1) {
+        top: 0;
+        /* Top bar */
+    }
+
+    .dropdown-toggle span:nth-child(2) {
+        top: 50%;
+        /* Middle bar */
+        transform: translateY(-50%);
+    }
+
+    .dropdown-toggle span:nth-child(3) {
+        bottom: 0;
+        /* Bottom bar */
+    }
+
+    /* Transform into a "cross" when active */
+    .dropdown-toggle.active span:nth-child(1) {
+        transform: rotate(45deg) translateY(8px);
+    }
+
+    .dropdown-toggle.active span:nth-child(2) {
+        transform: rotate(-45deg) translateY(-8px);
+    }
+
+    .dropdown-toggle.active span:nth-child(3) {
+        opacity: 0;
+        /* Hide the middle bar */
+    }
+
+    .cta-button {
+        background-color: #73c5ff;
+
+        margin-right: 5vw;
+        width: 25vw;
+        height: 50px;
+        color: #ffffff;
+        border: none;
+        padding: 10px 20px;
+        font-size: 0.7rem;
+        text-align: left;
+
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.3s;
+        /* display: none; */
+    }
+
+    /* >>>>>>>>>>>>>>>>>>>>>>> */
+
+
+
+
+    /* >>>>>>>>>>>>>>>>>>>>>>>>>>>FOOTER */
+
+    #footer {
+        padding: 5px 0;
+        text-align: center;
+        background-color: none;
+        margin-top: 20px;
+    }
+
+    #footer .footer-container {
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    #footer .footer-items {
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    #footer .footer-links {
+        flex-direction: column;
+        margin-bottom: 0px;
+    }
+
+    #footer .footer-links a {
+        font-size: 14px;
+
+    }
+
+    #footer .social-icons {
+        flex-direction: row;
+        justify-content: center;
+        gap: 5px;
+
+    }
+
+    #footer .social-icons a i,
+    #footer .social-icons a img {
+        font-size: 20px;
+        width: 20px;
+        height: 20px;
+
+    }
+
+}

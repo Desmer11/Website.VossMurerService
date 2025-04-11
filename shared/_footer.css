@@ -1,0 +1,172 @@
+/* Footer styles */
+#footer {
+    /* margin-top: 30px; */
+    text-align: center;
+    box-sizing: border-box; 
+    height: 30vh;
+    width: 100vw;
+    padding: 1px;
+}
+#footer h4{
+color: #000000;
+font-size: 21px;
+font-weight: 600;
+}
+
+/* #footer:hover {
+    background-color: black; /* Change to black or any other color } */
+
+#footer .footer-container {
+    justify-content: space-evenly; 
+    align-items: center;
+    height: auto; 
+        
+       
+}
+
+#footer .footer-items {
+    margin-top: 30px;
+    flex: 1; 
+    border-radius: 8px;
+    color: #000000;
+    margin-bottom: 80px;
+}
+
+/* #footer .footer-items:hover {
+    background-color: #73c5ff; 
+} */
+
+#footer .footer-links {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0px;
+
+    
+}
+
+    #footer .footer-links a {
+        /* color: black; */
+        text-decoration: none;
+        font-size: 21px;
+        font-weight: 600;
+        
+        
+
+    }
+
+    #footer .footer-links p {
+        color: black;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+
+
+.socials-links-box {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: flex-start; 
+    padding: 20px; 
+    height: 50vh; 
+    width: 100%;
+    gap: 20px;
+    background-color: #001427;
+    text-align: center;
+    box-sizing: border-box;
+}
+#footer .socials-links-box h4{
+    color: white;
+    font-size: 21px;
+    font-weight: 600;
+    }
+    #footer .socials-links-box a {
+        color: white;
+        font-size: 21px;
+        font-weight: 600;
+
+        }
+
+/* #footer .social-icons {
+
+
+    
+    
+} */
+
+    /* #footer .social-icons #contact-txt {
+        color: white;
+        
+        font-size: 16px;
+        position: relative;
+
+    } */
+
+    /* #footer .social-icons a {
+        color: white;
+      
+        text-decoration: none;
+        transition: transform 0.3s;
+    } */
+
+        #footer .social-icons a i {
+            font-size: 24px;
+            
+        }
+
+        #footer .social-icons a img {
+            
+            width: 24px; /* Keep the image width smaller */
+            height: 24px; /* Maintain square proportions */
+            object-fit: contain; /* Ensure the image fits properly without distortion */
+        }
+
+        #footer .social-icons a:hover {
+            
+            transform: scale(1.05); /* Slight zoom effect */
+        }
+
+        .tlf {
+            position: fixed;
+            bottom: 0px;
+            margin: 0 0 0 0; 
+            width: 100vw;
+            height: 60px;
+            /* line-height: 60px; */
+
+            background-color: #006680; 
+            color: #ffffff;
+            text-align: center; 
+            padding: 0px; 
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); 
+            z-index: 999; 
+            border: 2px solid #fff;
+            border-radius: 8px;
+            /* opacity: 0.9; */
+           
+
+        }
+
+        .tlf a {
+            color: #ffffff !important;
+            text-decoration: none;
+            font-size: 16px;
+            transition: transform 0.3s, background-color 0.3s; /* Add transition here */
+
+            
+        }
+        
+        #footer .social-icons a:hover,
+        .tlf a:hover {
+            transform: scale(1.05); /* Slight zoom effect */
+        }
+        #footer .footer-items .copyright {
+            font-size: 12px !important;
+            /* background-color: grey !important */
+
+        }
+
+            
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */

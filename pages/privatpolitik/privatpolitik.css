@@ -1,0 +1,85 @@
+
+
+body, html {
+    /* padding-top: 1px;  */
+    /* Prevents collapsing margins  */
+    /* display: flex; */
+    /* flex-direction: column;  */
+    margin: 0; /* Remove default margin */
+    padding: 1 0 0 0; /* Remove default padding */
+    width: 100%; /* Ensure full width */
+}
+
+.wrapper {
+    flex: 1;
+    align-items: stretch;
+    width: 100vw;
+    min-height: 100vh; 
+    box-sizing: border-box; /* Include padding and border in dimensions */
+    position: relative;
+}
+
+
+
+#main-content {
+    display: column;
+    width: 80%;
+    height: 100%;
+    position: relative;
+    flex: 1;
+    text-align: left;
+    margin: 0 auto;
+    padding: 40px 0;
+    box-sizing: border-box;
+
+
+    /* background-color: blue; */
+    /* opacity: 0.9; */
+}
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> MAIN SECTION 1 */
+.main-section-1 {
+    margin-top: 40px;
+}
+
+/* Ensure paragraphs stay inside divs */
+.cookies, .personoplysninger {
+    background: #f9f9f9; /* Light background for separation */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Headings */
+h2, h3 {
+    color: #222;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+/* Paragraph styling */
+p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Links */
+a {
+    color: #006680;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile-friendly adjustments */
+@media (max-width: 768px) {
+    #main-content {
+        width: 95%; /* Less margin on smaller screens */
+    }
+}

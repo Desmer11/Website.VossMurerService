@@ -1,0 +1,278 @@
+/* Media Queries for Phones and Tablets */
+
+/* @media only screen and (max-width: 768px) - @media only screen and (max-width: 1024px) */
+
+@media only screen and (max-width: 1124px) {
+
+    html,
+    body {
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.2em;
+    }
+
+    /* Header adjustments */
+    /* #header {
+        padding: 8px 0;
+    } */
+
+    .header-container {
+
+        margin: 0;
+
+    }
+
+    .logo-section {
+        width: 20vw;
+        height: 50px;
+        margin-left: 10px;
+        display: flex;
+        align-items: left;
+        gap: 5px;
+    }
+
+    .logo {
+        width: 20vw;
+        height: 50px;
+
+    }
+
+    .nav-bar .nav-items {
+        flex-direction: column;
+        gap: 5px;
+        align-items: left;
+        margin-top: 50px;
+        margin-left: 20px;
+    }
+
+    .nav-bar .nav-items a {
+        font-size: 0.9rem;
+    }
+
+
+
+    /* >>>>>>>>>>>>>>>>>>>>>>>>  Dropdown-toggle */
+    /* Dropdown menu hidden by default */
+    .nav-bar {
+        position: absolute;
+        top: 0px;
+        left: -100%;
+        width: 35%;
+        height: 100vh;
+        background-color: #ffffff;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 10px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        z-index: 1000;
+        transition: left 0.4s ease;
+        /* Smooth slide-in effect */
+
+
+
+    }
+
+    /* Show the menu when active */
+    .nav-bar.active {
+        /* Slide into view */
+        left: 0px;
+    }
+
+
+    /* Dropdown toggle button */
+    .dropdown-toggle-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 50px;
+    }
+ /* Button container */
+.dropdown-toggle {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%; 
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    outline: none; 
+}
+.dropdown-toggle:focus {
+    outline: none;
+}
+
+/* Bars */
+.dropdown-toggle span {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 6px; /* Bar thickness */
+    background-color: #000;
+    border-radius: 2px; /* Rounded edges */
+    transition: all 0.3s ease;
+}
+ 
+
+  /* Adjust positions for the three bars */
+.dropdown-toggle span:nth-child(1) {
+    top: 10px;
+}
+
+.dropdown-toggle span:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.dropdown-toggle span:nth-child(3) {
+    bottom: 10px;
+}
+
+/* Transform into a "cross" when active */
+.dropdown-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translateY(13px);
+}
+
+.dropdown-toggle.active span:nth-child(2) {
+    transform: rotate(-45deg) translateY(-13px);
+}
+
+.dropdown-toggle.active span:nth-child(3) {
+    opacity: 0; /* Hide the middle bar */
+}
+
+    .cta-button-header {
+        margin: 0 0 0 0;
+        line-height: 10px;
+        width: 25vw;
+        height: 50px;
+        border: none;
+        font-size: 0.6rem;
+        text-align: center;
+
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.3s;
+        /* display: none; */
+    }
+
+    .cta-button {
+        background-color: #006680; 
+        color: #ffffff;
+    
+        margin-right: 0vw;
+        width: 100%;
+        height: 50px;
+        border: none;
+        padding: 10px 20px;
+        font-size: 1rem;    
+        font-weight: bold;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+    
+    .cta-button:hover {
+        background-color: #73c5ff; 
+        transform: scale(0.90); /* Slight zoom effect */
+    }
+
+    /* >>>>>>>>>>>>>>>>>>>>>>> */
+
+
+
+
+    /* >>>>>>>>>>>>>>>>>>>>>>>>>>>FOOTER */
+
+    #footer {
+        /* padding: 5px 0; */
+        text-align: center;
+        background-color: none;
+        /* margin-top: 20px; */
+      
+    }
+
+
+    #footer .footer-container {
+        flex-direction: column;
+        justify-content: center;
+        gap: 0px;
+        
+
+    }
+
+    .socials-links-box {
+        
+        color: #fff;
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: flex-start;
+        padding: 20px; 
+        height: 20vh; 
+        width: 100%;
+        background-color: #001427;
+        text-align: center;
+        box-sizing: border-box;
+    }
+    #footer .socials-links-box h4{
+        color: white !important;  
+        font-size: 21px;
+        font-weight: 600;
+        }
+        #footer .socials-links-box a {
+            color: white !important;  
+            font-size: 21px;
+            font-weight: 600;
+            }
+
+    #footer .footer-items {
+        width: 100%;
+        margin: 20px 0 35px 0;
+        font-size: 14px;
+        gap: 0;
+        
+
+    }
+
+    #footer .footer-links {
+        flex-direction: column;
+        margin-bottom: 0px;
+    }
+
+    #footer .footer-links a {
+        color: black;
+        text-decoration: none;
+        font-size: 21px;
+        font-weight: 600;
+
+    }
+
+  
+    
+    .tlf {
+        position: fixed;
+        bottom: 0px;
+        margin: 0 0 0 0; 
+        width: 100vw;
+        height: 50px;
+    }
+
+    .footer-items .copyright p {
+        font-size: 10px !important;
+
+    }
+
+
+
+
+    
+
+
+}
+
+

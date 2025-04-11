@@ -1,0 +1,112 @@
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> MAIN CONTENT */
+
+
+@media only screen and (max-width: 1124px) {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        width: 100%;
+    }
+    #main-content {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .background-image {
+        margin-top: 50px;
+    }
+
+    .main-section-1 {
+        padding: 0;
+        width: 100%;
+        height: 200vh;
+        display: flex;
+        flex-direction: column;
+
+    }
+    #main-text {
+        margin: 50px 0 0 0 ;
+        background-color: rgba(0, 102, 128, 0.5);
+
+        text-align: left;
+        /* padding: 0 15px; */
+        /* Add padding for smaller screens */
+        width: 100%;
+        height: 90vh;
+
+    }
+
+    #main-text h1 {
+        margin-top:70px;
+        font-size: 1.8rem;
+        /* Adjust heading size for readability */
+        margin-bottom: 10px;
+    }
+
+    #main-text p {
+        font-size: 1.2rem;
+        /* Reduce paragraph font size */
+        line-height: 1.6em;
+    }
+    #main-form {
+        width: 100%;
+        padding: 20px;
+        margin: 0;
+    }
+    .main-section-3 {
+        height: 100vh;
+        width: 100%;
+        overflow: hidden; /* Prevents overflow */
+
+    }
+    .main-section-3-box-container {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 1px;
+    }
+    .main-section-4 {
+        height: 75vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 1px;
+    }
+        #carouselExampleAutoplaying {
+            width: 100%;
+            max-width: 1200px; 
+            margin: auto; 
+        }
+        .carousel-inner {
+            object-fit: cover; 
+            height: 100%; 
+        }
+        .carousel-inner img {
+            object-fit: cover; 
+            height: 100%; 
+        }
+
+    .main-section-5 {
+        height: 75vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 1px;
+    }
+        #carouselExampleAutoplaying-section-5 {
+            width: 100%;
+            max-width: 1200px; 
+            margin: auto; 
+        }
+        .carousel-inner-section-5 {
+            object-fit: cover; 
+            height: 100%; 
+        }
+        .carousel-inner-section-5 img {
+            object-fit: cover; 
+            height: 100%; 
+        }
+}

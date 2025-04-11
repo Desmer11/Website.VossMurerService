@@ -1,0 +1,93 @@
+/* Responsive design for tablets (768px - 1024px) */
+@media (max-width: 1024px) {
+    .main-section-2 {
+        flex-direction: column; 
+        height: auto; 
+    }
+
+    .main-section-2-box-1, .main-section-2-box-2 {
+        width: 100%; 
+        height: auto; 
+    }
+}
+
+/* Responsive design for phones (≤768px) */
+@media (max-width: 768px) {
+    body, html {
+        overflow-x: hidden; /* Prevent horizontal scroll */
+    }
+
+    
+    
+    /* #background {
+        height: 150vh;
+        flex: 1;
+    } */
+
+    .main-h h1 {
+        /* margin-top: 80px; */
+        font-size: 30px; /* Reduce title size */
+    }
+
+    .main-section-1 {
+        margin: 0 0 0 0;
+        height: 100vh; 
+
+    }
+
+    .main-p {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 100%; 
+        height: auto; 
+        font-size: 1rem;
+    }
+    .sub-p {
+        width: 100%;
+        border-radius: 0;
+        height: auto; 
+        font-size: 1rem;
+    }
+
+    .main-section-2 {
+        flex-direction: column; 
+        height: 70vh;
+
+    }
+
+    .main-section-2-box-1 {
+        width: 90%;
+        height: 100%;
+   
+
+    }
+    .main-section-2-box-1 .main-h {
+        margin: 5px 10px 5px 10px;
+        font-size: 16px;
+        text-align: center;
+        color: #004a5e;
+    }
+    .main-section-2-box-1 .main-p {
+        margin: 0px 20px 0px 20px;
+       
+        font-size: 14px;
+        text-align: center;
+        color: #004a5e;
+        flex-grow: 1; /* Pushes buttons to the bottom */
+    }
+
+    .main-section-3-title {
+        font-size: 1.8rem; 
+    }
+
+    .main-section-3-box {
+        width: 100%;
+    }
+
+    .cta-button {
+        font-size: 12px; 
+
+    }
+
+
+}

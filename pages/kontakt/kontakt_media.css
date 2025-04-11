@@ -1,0 +1,19 @@
+/* Responsive Design */
+@media (max-width: 768px) {
+    #main-section-1 {
+        
+    }
+
+    #main-text {
+        width: 100%;
+        padding: 20px;
+    }
+    #main-text h1{
+        font-size: 36px;
+    }
+
+    #main-form {
+        width: 80%;
+        padding: 20px;
+    }
+}
