@@ -1,13 +1,11 @@
-
-
-body, html {
-
-    margin: 0; /* Remove default margin */
-    padding: 1 0 0 0; /* Remove default padding */
-    width: 100%; /* Ensure full width */
-    display: flex;
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/* Wrapper */
 .wrapper {
     flex: 1;
     align-items: stretch;
@@ -17,83 +15,62 @@ body, html {
     position: relative;
 }
 
-
-
+/* Main Content */
 #main-content {
     margin: 0;
-    display: column;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    flex: 1;
-    text-align: left;
-    box-sizing: border-box;
-
-
-    /* background-color: blue; */
-    /* opacity: 0.9; */
-}
-
-
-/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> MAIN SECTION 1 */
-.main-section-1 {
-    position: relative; 
     display: flex;
-    flex-direction: column;
     width: 100%;
     height: 100vh;
-    padding: 5px;
-    margin: 0;
+    position: relative;
     flex: 1;
     text-align: left;
     box-sizing: border-box;
-    background-color: black;
-    z-index: 1; 
+    
+    color: #73c5ff;
+    background-color:white;
 }
-* {
-    border: none; /* Remove any border */
-    padding: 0; /* Remove padding */
-    margin: 0; /* Remove margin */
-    box-sizing: border-box; /* Consistent box model */
-}
-
-
-/* GALLERY */
-
-.gallery-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 15px;
-}
-
-.gallery-item {
-    position: relative;
-    overflow: hidden;
-    border-radius: 10px;
-}
-
-.gallery-item img {
+.main-section {
+    padding: 1px;
+    display: flex;
+    flex-direction: flex;
+    height: 60vh;
     width: 100%;
-    height: auto;
-    display: block;
-    transition: transform 0.3s ease;
+    margin-top: 80px;
+    gap: 3rem;
+    color: white;
+    background-color:#006680;
+    justify-content: space-evenly;
 }
 
-.gallery-item:hover img {
-    transform: scale(1.1);
+.project-header {
+    margin-top: 10vh;
+
+    height: 50%;
+    width: 30%;
+}
+.project-header p {
+
 }
 
-.gallery-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
+.project-gallery {
+    margin-top: 5vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    height: 40vh;
+    padding: 1rem;
+    box-sizing: border-box;
+    background-color: #fff;
+  }
+  
+  .gallery-item {
+    overflow: hidden;
+  }
+  
+  .gallery-item img {
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.gallery-item:hover .gallery-overlay {
-    opacity: 1;
-}
+    object-fit: cover;
+    display: block;
+  }
+  

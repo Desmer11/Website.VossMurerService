@@ -2,7 +2,7 @@
 
 /* @media only screen and (max-width: 768px) - @media only screen and (max-width: 1024px) */
 
-@media only screen and (max-width: 1124px) {
+@media only screen and (max-width: 1224px) {
 
     html,
     body {
@@ -19,23 +19,60 @@
     .header-container {
 
         margin: 0;
+        height: 80px;
+        padding: 0 0 0 0; 
 
     }
 
     .logo-section {
-        width: 20vw;
-        height: 50px;
-        margin-left: 10px;
+        height: 80px;
         display: flex;
         align-items: left;
         gap: 5px;
+        
     }
 
     .logo {
-        width: 20vw;
-        height: 50px;
+
+        width: 100%;
+        height: 80px;
 
     }
+    .hide {
+        display: block;
+
+    }
+    .logo-section-navbar {
+        height: 90px;
+        display: flex;
+        align-items: left;
+        gap: 5px;
+        margin: -10px 0 0 -10px;
+        
+    }
+    .logo-navbar {
+        /* margin-top: -10px; */
+        margin-left: 0px;
+
+    }
+    .firm-name-media {
+        display: none;
+    }
+    .firm-name {
+        font-size: 1.0rem;
+
+      
+
+    
+    }
+
+    .firm-name h3{
+        font-size: 1.2rem;
+
+        
+    }
+           
+     
 
     .nav-bar .nav-items {
         flex-direction: column;
@@ -43,6 +80,7 @@
         align-items: left;
         margin-top: 50px;
         margin-left: 20px;
+        
     }
 
     .nav-bar .nav-items a {
@@ -54,10 +92,11 @@
     /* >>>>>>>>>>>>>>>>>>>>>>>>  Dropdown-toggle */
     /* Dropdown menu hidden by default */
     .nav-bar {
+     
         position: absolute;
         top: 0px;
         left: -100%;
-        width: 35%;
+        width: 55%;
         height: 100vh;
         background-color: #ffffff;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -77,6 +116,12 @@
     .nav-bar.active {
         /* Slide into view */
         left: 0px;
+        font-size: 21px;
+    }
+    .nav-bar.active a{
+        /* Slide into view */
+        left: 0px;
+        font-size: 20px;
     }
 
 
@@ -87,6 +132,7 @@
         align-items: center;
         width: 40px;
         height: 50px;
+        margin-right: 10px;
     }
  /* Button container */
 .dropdown-toggle {
@@ -106,6 +152,7 @@
 .dropdown-toggle:focus {
     outline: none;
 }
+
 
 /* Bars */
 .dropdown-toggle span {
@@ -157,7 +204,7 @@
 
         cursor: pointer;
         transition: background-color 0.3s, transform 0.3s;
-        /* display: none; */
+        display: none;
     }
 
     .cta-button {
