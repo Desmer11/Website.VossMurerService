@@ -67,7 +67,7 @@
 }
 .firm-name h3{
     margin-top: 10px;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: bold;
     text-transform: uppercase;
     text-shadow: 23px 23px 26px rgba(0, 0, 0, 0.9); 
@@ -103,6 +103,7 @@
     margin: 0;
     padding: 0;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+    
     /* text-transform: uppercase; */
 }
 
