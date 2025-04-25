@@ -17,4 +17,5 @@ nextBtn.addEventListener("click", () => {
 
 function rotate() {
   imageContainer.style.transform = `perspective(1000px) rotateY(${x}deg)`;
+  if(id = btn)
 }
