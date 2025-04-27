@@ -133,8 +133,8 @@ font-weight: 600;
             bottom: 0px;
             margin: 0 0 0 0; 
             width: 100vw;
-            height: 60px;
-            /* line-height: 60px; */
+            height: 55px;
+           
 
             background-color: #006680; 
             color: #ffffff;
@@ -152,15 +152,17 @@ font-weight: 600;
         .tlf a {
             color: #ffffff !important;
             text-decoration: none;
-            font-size: 16px;
-            transition: transform 0.3s, background-color 0.3s; /* Add transition here */
+            line-height: 55px;
+            transition: transform 0.3s, background-color 0.3s; 
+            text-shadow: 23px 23px 26px rgba(0, 0, 0, 0.9); 
 
             
         }
+
         
         #footer .social-icons a:hover,
         .tlf a:hover {
-            transform: scale(1.05); /* Slight zoom effect */
+            transform: scale(1.05);
         }
         #footer .footer-items .copyright {
             font-size: 12px !important;
