@@ -37,18 +37,33 @@
         justify-content: space-evenly;
     }
     .gallery {
-        margin: 0;
+        margin: 0 0 0 0;
         display: flex; 
         flex-direction: column; 
         margin-top: 0px;
         justify-content: center;
         align-items: center;
         text-align: center; 
+        width: 50%;
         height: 100vh;
-        width: 100%;
         overflow: hidden;
 
     }
+        .gallery-text-media{
+            /* position: absolute; */
+            z-index: 99;
+            display: none;
+        }
+        .gallery-text{
+            z-index: 99;
+            width: 30%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column; /* Ensure vertical stacking */
+            justify-content: center; /* Center both elements vertically */
+            align-items: center;     /* Center elements horizontally */
+            text-align: center;      /* Center text within lines */
+        }
 
         .gallery-header {
             /* height: 50%; */
