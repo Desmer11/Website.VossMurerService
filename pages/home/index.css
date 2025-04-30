@@ -125,13 +125,20 @@ body, html {
         position: relative;
     
         /* Text shadow to enhance readability */
-        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9); 
+        text-shadow: 23px 23px 26px rgba(0, 0, 0, 0.9); 
         
     }
     #main-text h1 {
         font-size: 60px;
         font-weight: 700;
         text-transform: uppercase;
+        line-height: 1em;
+        text-shadow: 23px 23px 26px rgba(0, 0, 0, 0.9); 
+    }
+    #main-text p {
+        /* font-size: 60px; */
+        /* font-weight: 700; */
+        /* text-transform: uppercase; */
         line-height: 1em;
         text-shadow: 23px 23px 26px rgba(0, 0, 0, 0.9); 
     }

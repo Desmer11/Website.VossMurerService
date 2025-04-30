@@ -57,6 +57,7 @@
             display: none;
         }
         .gallery-text{
+            text-shadow: 23px 23px 26px rgba(0, 0, 0, 0.9); 
             z-index: 99;
             width: 30%;
             height: 100vh;
@@ -154,7 +155,7 @@
         }
         .gallery-text2{
             z-index: 99;
-            
+            text-shadow: 23px 23px 26px rgba(0, 0, 0, 0.9); 
             width: 30%;
             height: 100%;
             padding: 20px;
