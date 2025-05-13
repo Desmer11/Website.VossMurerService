@@ -1,0 +1,17 @@
+{
+    "name": "jsn/website.voss-murer-service",
+    "description": "SendMails",
+    "autoload": {
+        "psr-4": {
+            "Jsn\\WebsiteVossMurerService\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "JSNK"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^6.10"
+    }
+}
