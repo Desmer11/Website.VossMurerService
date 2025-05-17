@@ -30,20 +30,8 @@ This is a responsive website for a construction and renovation business. The web
 
 ### JavaScript
 
-### File Structure
-|
-├── home/
-│   ├── index.html
-│   ├── index.css
-│   └── index.js
-├── shared/
-│   ├── _layout.css
-│   ├── _header.css
-│   ├── _media.css
-│   └── _footer.css
-|   └── _layout.js
-|   └── _footer.html
-|   └── _header.html
+### Pages
+
 Front Page Upper
 ![alt text](<media/PicturesOfTheProject/Screenshot 1.png>) 
 
