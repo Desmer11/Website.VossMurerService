@@ -44,8 +44,5 @@ This is a responsive website for a construction and renovation business. The web
 |   └── _layout.js
 |   └── _footer.html
 |   └── _header.html
-├── media/ |background|footer|header|
-│   ├── header/logo.webp
-│   └── background/BackgroundConstructionVideo-1.mp4
 
-![alt text](<Screenshot 7-1.png>) ![alt text](<Screenshot 1-1.png>) ![alt text](<Screenshot 2-1.png>) ![alt text](<Screenshot 3-1.png>) ![alt text](<Screenshot 4-1.png>) ![alt text](<Screenshot 5-1.png>) ![alt text](<Screenshot 6-1.png>)
+![alt text](<Screenshot 1-2.png>) ![alt text](<Screenshot 2-2.png>) ![alt text](<Screenshot 3-2.png>) ![alt text](<Screenshot 4-2.png>) ![alt text](<Screenshot 5-2.png>) ![alt text](<Screenshot 6-2.png>) ![alt text](<Screenshot 7-2.png>)
