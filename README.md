@@ -45,4 +45,4 @@ This is a responsive website for a construction and renovation business. The web
 |   └── _footer.html
 |   └── _header.html
 
-![alt text](<Screenshot 1-2.png>) ![alt text](<Screenshot 2-2.png>) ![alt text](<Screenshot 3-2.png>) ![alt text](<Screenshot 4-2.png>) ![alt text](<Screenshot 5-2.png>) ![alt text](<Screenshot 6-2.png>) ![alt text](<Screenshot 7-2.png>)
+![alt text](<media/PicturesOfTheProject/Screenshot 1.png>) ![alt text](<media/PicturesOfTheProject/Screenshot 2.png>) ![alt text](<media/PicturesOfTheProject/Screenshot 3.png>) ![alt text](<media/PicturesOfTheProject/Screenshot 4.png>) ![alt text](<media/PicturesOfTheProject/Screenshot 5.png>) ![alt text](<media/PicturesOfTheProject/Screenshot 6.png>) ![alt text](<media/PicturesOfTheProject/Screenshot 7.png>)
