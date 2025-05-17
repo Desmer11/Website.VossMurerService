@@ -56,5 +56,3 @@ This is a responsive website for a construction and renovation business. The web
 ![alt text](<media/PicturesOfTheProject/Screenshot 5.png>) 
 
 ![alt text](<media/PicturesOfTheProject/Screenshot 6.png>) 
-
-![alt text](<media/PicturesOfTheProject/Screenshot 7.png>)
