@@ -44,15 +44,21 @@ This is a responsive website for a construction and renovation business. The web
 |   └── _layout.js
 |   └── _footer.html
 |   └── _header.html
-
+Front Page Upper
 ![alt text](<media/PicturesOfTheProject/Screenshot 1.png>) 
 
+Front Page Lower
 ![alt text](<media/PicturesOfTheProject/Screenshot 2.png>) 
 
+About Us Site
 ![alt text](<media/PicturesOfTheProject/Screenshot 3.png>) 
 
+Contact Site
 ![alt text](<media/PicturesOfTheProject/Screenshot 4.png>) 
 
+Galleri Site Upper
 ![alt text](<media/PicturesOfTheProject/Screenshot 5.png>) 
 
+Galleri SIte Lower
 ![alt text](<media/PicturesOfTheProject/Screenshot 6.png>) 
+
