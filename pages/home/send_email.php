@@ -6,7 +6,7 @@ putenv("SMTP_USER=thorvoss7@hotmail.com");
 putenv("SMTP_PASS=");
 
 echo getenv('SMTP_USER'); // Should print "thorvoss7@hotmail.com"
-echo getenv('SMTP_PASS'); // Should print "Vossem123"
+echo getenv('SMTP_PASS'); // Should print ""
 
 require 'vendor/autoload.php';
 
