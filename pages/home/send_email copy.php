@@ -1,33 +1,14 @@
 <?php
-
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-putenv("SMTP_USER=jsn1190@gmail.com");
-putenv("SMTP_PASS=hvemerdu11");
+putenv("SMTP_USER=thorvoss7@hotmail.com");
+putenv("SMTP_PASS=Vossem123");
 
-echo getenv('SMTP_USER'); // Should print ".com"
+echo getenv('SMTP_USER'); // Should print "thorvoss7@hotmail.com"
 echo getenv('SMTP_PASS'); // Should print ""
 
-require "../../vendor/autoload.php";
-
-
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // Handle the POST request
-} else {
-    die("Invalid request method.");
-}
-
-// use Dotenv\Dotenv;
-
-// $dotenv = Dotenv::createImmutable(__DIR__);
-// $dotenv->load();
-
-// $mail->Username = getenv('SMTP_USER');
-// $mail->Password = getenv('SMTP_PASS');
+require 'vendor/autoload.php';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // Get form data
@@ -48,23 +29,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $mail = new PHPMailer(true);
 
     try {
-
-            // Enable debugging
-        $mail->SMTPDebug = 2; // Debug level
-        $mail->Debugoutput = 'html';
-        
         // Server settings
-        $mail->SMTPOptions = 
-        [
-            'ssl' => [
-                'verify_peer' => false,
-                'verify_peer_name' => false,
-                'allow_self_signed' => true,
-            ],
-        ];
-
         $mail->isSMTP();
-        $mail->Host = 'smtp.gmail.com';
+        $mail->Host = 'smtp.simply.com';
         $mail->SMTPAuth = true;
         $mail->Username = getenv('SMTP_USER'); // Use environment variables
         $mail->Password = getenv('SMTP_PASS'); // Use environment variables
@@ -72,10 +39,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $mail->Port = 587;
 
         // Recipients
-        $mail->setFrom($email, $name);
-        // $mail->addReplyTo($email, $name);
-      $mail->addAddress(getenv('SMTP_USER'));
-
+        $mail->setFrom('thorvoss7@hotmail.com', 'Website Contact Form');
+        $mail->addReplyTo($email, $name);
+        $mail->addAddress('jonassnk11@gmail.com');
 
         // Content
         $mail->isHTML(false);
