@@ -3,13 +3,31 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-putenv("SMTP_USER=thorvoss7@hotmail.com");
-putenv("SMTP_PASS=");
+putenv("SMTP_USER=jsn1190@gmail.com");
+putenv("SMTP_PASS=hvemerdu11");
 
 echo getenv('SMTP_USER'); // Should print ".com"
 echo getenv('SMTP_PASS'); // Should print ""
 
-require 'vendor/autoload.php';
+require "../../vendor/autoload.php";
+
+
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    // Handle the POST request
+} else {
+    die("Invalid request method.");
+}
+
+// use Dotenv\Dotenv;
+
+// $dotenv = Dotenv::createImmutable(__DIR__);
+// $dotenv->load();
+
+// $mail->Username = getenv('SMTP_USER');
+// $mail->Password = getenv('SMTP_PASS');
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // Get form data
@@ -54,9 +72,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $mail->Port = 587;
 
         // Recipients
-        $mail->setFrom('thorvoss7@hotmail.com', 'Website Contact Form');
-        $mail->addReplyTo($email, $name);
-        $mail->addAddress('jonassnk11@gmail.com');
+        $mail->setFrom($email, $name);
+        // $mail->addReplyTo($email, $name);
+      $mail->addAddress(getenv('SMTP_USER'));
+
 
         // Content
         $mail->isHTML(false);
