@@ -3,7 +3,7 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-putenv("SMTP_USER=thorvoss7@hotmail.com");
+putenv("SMTP_USER=@.com");
 putenv("SMTP_PASS=");
 
 echo getenv('SMTP_USER'); // Should print ".com"
@@ -54,9 +54,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $mail->Port = 587;
 
         // Recipients
-        $mail->setFrom('thorvoss7@hotmail.com', 'Website Contact Form');
+        $mail->setFrom('@.com', 'Website Contact Form');
         $mail->addReplyTo($email, $name);
-        $mail->addAddress('jonassnk11@gmail.com');
+        $mail->addAddress('@.com');
 
         // Content
         $mail->isHTML(false);
