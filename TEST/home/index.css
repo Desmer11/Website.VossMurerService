@@ -1,0 +1,439 @@
+
+
+body, html {
+
+    margin: 0; /* Remove default margin */
+    padding: 1 0 0 0; /* Remove default padding */
+    width: 100%; /* Ensure full width */
+    display: flex;
+}
+
+.wrapper {
+    flex: 1;
+    align-items: stretch;
+    width: 100vw;
+    min-height: 100vh; 
+    box-sizing: border-box; /* Include padding and border in dimensions */
+    position: relative;
+}
+
+
+
+#main-content {
+    margin: 0;
+    display: column;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    flex: 1;
+    text-align: left;
+    box-sizing: border-box;
+
+
+    /* background-color: blue; */
+    /* opacity: 0.9; */
+}
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> MAIN SECTION 1 */
+#background {
+    position: absolute; /* Make it stack beneath */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Ensure it is below content */
+    overflow: hidden;
+}
+
+.background-image-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+
+
+
+
+
+
+.main-section-1 {
+    position: relative; 
+    display: flex;
+    flex-direction: flex;
+    width: 100%;
+    height: 100vh;
+    padding: 5px;
+    margin: 0;
+    flex: 1;
+    text-align: left;
+    box-sizing: border-box;
+    background-color: black;
+    opacity: 0.9;
+  
+    z-index: 1; 
+}
+    /* .logo-background {
+        width: 100%;
+        background-color: #006680;
+        opacity: 0.9;
+
+    }
+    .logo-container {
+        width: 200px;  
+        height: 130px; 
+        margin: 70px 0 0 25%;
+        display: flex;
+        justify-content: center;  
+        align-items: center;     
+        background-color: #006680;
+        opacity: 0.9;
+
+    } */
+
+    .logo-main-content {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0);  
+        object-fit: cover;
+
+    }
+    #main-text {
+
+        /* background-color: #006680; */
+        opacity: 0.9;
+        color: white;
+        padding: 20px;
+        border-radius: 8px;
+        height: 350px;
+        width: 40%;
+        margin: 250px auto;
+        text-align: left;
+        z-index: 2;
+        position: relative;
+    
+        /* Text shadow to enhance readability */
+        text-shadow: 23px 23px 26px rgba(0, 0, 0, 0.9); 
+        
+    }
+    #main-text h1 {
+        font-size: 60px;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 1em;
+        text-shadow: 23px 23px 26px rgba(0, 0, 0, 0.9); 
+    }
+    #main-text p {
+        /* font-size: 60px; */
+        /* font-weight: 700; */
+        /* text-transform: uppercase; */
+        line-height: 1em;
+        text-shadow: 23px 23px 26px rgba(0, 0, 0, 0.9); 
+    }
+
+    #main-form {
+        /* background-color: ; */
+        color: black;
+        padding: 20px;
+        border-radius: 12px;
+        width: 100%;
+        max-width: 500px;
+        min-width: 320px;
+        margin: 150px auto;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+        text-align: center;
+        position: relative;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    #main-form:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    }
+    
+    /* Form Title */
+    #main-form h3 {
+        opacity: 0.9;
+        color: white;
+        padding: 20px;
+        background-color: #006680;
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    
+    #main-form p {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    
+    /* Form Fields */
+    .form-group {
+        margin-bottom: 15px;
+    }
+    
+    input, textarea {
+        width: 100%;
+        padding: 10px;
+        border: 2px solid transparent;
+        border-radius: 6px;
+        font-size: 16px;
+        transition: all 0.3s ease-in-out;
+        outline: none;
+        background: white;
+        color: black;
+    }
+    
+    input::placeholder,
+    textarea::placeholder {
+        color: black;
+    }
+    
+    input:focus, textarea:focus {
+        border-color: white;
+        background: rgba(255, 255, 255, 0.3);
+    }
+    
+    /* Submit Button */
+    .Submit-Button {
+        background-color: black;
+        color: white;
+        border: none;
+        padding: 12px 20px;
+        font-size: 18px;
+        font-weight: bold;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        width: 100%;
+    }
+    
+    .Submit-Button:hover {
+        background-color: #006680;
+        color: white;
+    }
+    
+
+
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> MAIN SECTION 2 */
+
+.main-section-2, .main-section-3, .main-section-4{
+    display: flex; 
+    flex-direction: column; 
+    width: 100vw; 
+    height: 50vh; 
+    
+    text-align: left; 
+    box-sizing: border-box; /* Include padding and border in dimensions */
+    margin: 0; 
+    padding: 0; 
+}
+
+
+
+.main-section-2 {
+    display: flex; /* Flex layout for side-by-side alignment */
+    flex-direction: row; /* Horizontal layout */
+    align-items: center; /* Align content vertically */
+    justify-content: center; /* Center items horizontally */
+    height: 80vh; /* Full viewport height */
+    text-align: center;
+    background-color: white;
+    color: black;
+    padding: 20px; /* Add spacing inside the section */
+    box-sizing: border-box; /* Include padding in width/height */
+}
+   /* MAIN SECTION BOX 1 */
+.main-section-2-box-1 {
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px; /* Rounded corners */
+    width: 30%;
+    height: 70vh;
+    box-sizing: border-box;
+    margin-left: 10%;
+    color: white;
+    opacity: 0.9;
+    position: relative; /* Ensures carousel is positioned relative to this box */
+    overflow: hidden; /* Hides any overflow from the carousel */
+}
+
+
+/* Main Section Styling */
+.main-section-3 {
+    display: flex;
+    flex-direction: column; /* Stack title and boxes vertically */
+    align-items: center; /* Center content horizontally */
+    justify-content: center;
+    padding: 20px; /* Spacing inside the section */
+    height: 35vh; /* Full viewport height */
+    background-color: #001427;
+    text-align: center;
+    box-sizing: border-box;
+}
+    .main-section-3-title {
+        font-size: 2.5rem;
+        color: white;
+        margin-top: 50px;
+        margin-bottom: 30px; /* Space below the title */
+    }
+
+    /* Box Container Styling */
+    .main-section-3-box-container {
+        display: flex; /* Flex layout for side-by-side boxes */
+        flex-direction: row; /* Horizontal layout */
+        justify-content: center; /* Center boxes horizontally */
+        align-items: stretch; /* Stretch boxes to the same height */
+        gap: 20px; /* Space between boxes */
+        width: 100%; /* Full-width container */
+    }
+
+    /* Individual Box Styling */
+    .main-section-3-box {
+        flex: 1; /* Equal width for all boxes */
+        max-width: 300px; /* Limit max width */
+        height: auto; /* Adjust height automatically */
+        padding: 20px; /* Internal spacing */
+        background-color: black; /* Background color */
+        color: white; /* Text color */
+        opacity: 0.9; /* Slight transparency */
+        border-radius: 8px; /* Optional: Rounded corners */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Shadow effect */
+        box-sizing: border-box; /* Include padding in dimensions */
+        text-align: left; /* Align text inside boxes */
+    }
+
+    /* Box Titles */
+    .main-section-3-box h2 {
+        margin-bottom: 15px; /* Space below the heading */
+    }
+
+    /* Box Content Styling */
+    .main-section-3-box p {
+        margin-bottom: 20px;
+    }
+
+
+
+    .carousels {
+        margin: 0;
+        padding: 1px;
+        display: flex;
+        width: 100%;
+        height: 75vh;
+        position: relative;
+        flex: 1;
+        text-align: left;
+        box-sizing: border-box;
+        background-color: #006680;
+    }
+    
+.main-section-4 {
+    background-color: #dbdcd4;
+    height: 75vh;
+    max-height: 75vh; /* Ensures it doesn't expand beyond this */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1px;
+    overflow: hidden; /* Hides any extra content */
+}
+    #carouselExampleAutoplaying {
+        width: 100%;
+        max-width: 1200px; 
+        margin: auto; 
+    }
+    .carousel-inner {
+        object-fit: cover; 
+        height: 100%; 
+    }
+    .carousel-inner img {
+        object-fit: cover; 
+        height: 100%; 
+        max-height: 75vh; 
+        width: 100%;
+    }
+    .carousel-image-container {
+        position: relative; /* Allow absolute positioning of the button */
+    }
+    .carousel-item h5 {
+        color: white;
+
+    }
+    /* .carousel-item a {
+
+        
+    } */
+    .carousel-caption {
+        margin: 15px;
+    }
+
+.main-section-5 {
+    background-color: #dbdcd4;
+    height: 75vh;
+    max-height: 75vh; 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1px;
+    overflow: hidden; /* Hides any extra content */
+}
+    #carouselExampleAutoplaying-section-5 {
+        width: 100%;
+        max-width: 1200px; 
+        margin: auto; 
+    }
+    .carousel-inner-section-5 {
+        object-fit: cover; 
+        height: 100%; 
+    }
+    .carousel-inner-section-5 img {
+        object-fit: cover; 
+        height: 100%; 
+        max-height: 75vh; 
+        width: 100%;
+    }
+    .cta-button {
+        background-color: #006680; 
+        color: #ffffff;
+    
+        margin-right: 0vw;
+        width: 20vw;
+        height: 50px;
+        border: none;
+        padding: 10px 20px;
+        font-size: 1rem;    
+        font-weight: bold;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+    
+    .cta-button:hover {
+        background-color: #73c5ff; 
+        transform: scale(0.90); /* Slight zoom effect */
+    }
+
+
+
+* {
+    border: none; /* Remove any border */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    box-sizing: border-box; /* Consistent box model */
+}
